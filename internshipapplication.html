@@ -1,275 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Working Details</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  </head>
-<style>
-div{
-background-color:#01B075;
-font-family:Helvetica;
-font-size:15px;
-color: rgb(247, 250, 252);}
-</style>
-  <body style="font-size: 15px;">
-    <!-- form -->
-    <form action="#" >
-      <div class="main-form" style=" height:1150px; align-content: center; width: 740px; margin-left:auto; margin-right: auto; margin-top: 10px;padding-left: 76px; padding-right: 76px; padding-top: 28px; padding-bottom: 37px; ">
-        <!-- mandy -->
-        <div style="text-align:right; font-size:15px  ;">Mandatory Fields(*)</div>
 
-        <!-- personal detail -->
-        <div style="font-size:26px ; text-align: left;"><b>PERSONAL DETAILS </b></div>
-         <br>
-        <!-- tabele for form -->
-        <table style="margin-left:auto;margin-right:auto" >
-          <!-- name -->
-          <tr>
-            <td>
-              <label for="fn">First Name*</label><br>
-              <input type="text" id="fn" style="width:280px;margin-right:41px;">
-            </td>
-            <td>
-              <label for="ln">Last Name*</label><br>
-              <input type="text" id="ln" style="width:280px;margin-right:41px;">
-            </td>
-          </tr>
+</head>
+<body>
 
-          <!-- phone no -->
-          <tr>
-            <td>
-              <label for="Pn">Phone No.*</label><br>
-              <input type="tel" id="Pn" style="width:280px;margin-right:41px;">
-            </td>
-            <td>
-              <label for="APn">Alternate Phone No.</label><br>
-              <input type="tel" id="APn" style="width:280px;margin-right:41px;">
-            </td>
-          </tr>
-          
-          <!-- email id -->
-          <tr>
-            <td colspan="2">
-              <label for="email">E-Mail Id*</label><br>
-             <input type="email" id="email" style="width:600px ;" >
-            </td>
-          
+    <div class="mx-auto w-50 pb-5" style="height: auto; background-color: #01B075;">
+        <div class="float-sm-end pe-4 pt-3 text-light">Mandatory Fields(*)</div>
 
-          </tr>
-          <tr>
-            <td>
-              <label for="address">Address*</label><br>
-              <textarea name="myText" cols="30" rows="3"></textarea></td>
-            
-          </tr>
+        <!----------------------------- Personal Details------ -->
 
-          <tr>
-            <td colspan="2">
-              <label for="resume">Resume*</label>
-              <input type="file" id="file" placeholder="upload from drive" style="width:600px;">(.pdf,.txt,.rtf,.docx,.doc files with a 2MB maximum file size are supported)
-            </td>
-           
-          </tr>
-          
-          <tr>
-            <td>
-             <input type="button" value="Upload">
-            </td>
-          </tr>
-        
-      
-          
-</table>
+        <div class="pt-5 ps-4" style="font-size: 25px; color: white; font-weight: bold;">PERSONAL DETAILS</div>
 
-  <!--Education Details-->
-<br>
-<table style="margin-left:auto; margin-right:auto">
+        <form action="">
+            <div class="d-flex">
+                <div class="ps-4 pe-4 w-50">
+                    <label for="">First Name*</label><br>
+                    <input type="text" name="" id="" class="w-100">
+                </div>
+
+                <div  class="ps-4 pe-4 w-50">
+                    <label for="">Last Name*</label><br>
+                    <input type="text" name="" id="" class="w-100">
+                </div>
+            </div>
 
 
-<!-- Educational detail -->
-<div style="font-size:26px ;"><b>EDUCATIONAL DETAILS</b></div>
+            <div class="d-flex">
+                <div class="ps-4 pe-4 w-50">
+                    <label for="">Phone No*</label><br>
+                    <input type="number" name="" id="" class="w-100">
+                </div>
+
+                <div  class="ps-4 pe-4 w-50">
+                    <label for="">Alternate Phone No.</label><br>
+                    <input type="number" name="" id="" class="w-100">
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="ps-4 pe-4 w-100">
+                    <label for="">E-Mail Id*</label><br>
+                    <input type="email" name="" id="" class="w-100">
+                </div>
+            </div>
+
+            <div class="mb-3 mt-3 ps-4 pt-2">
+                <label for="comment">Comments:</label>
+                <textarea class="form-control w-25 mt-2" rows="5" id="comment" name="text" style="height: 100px;"></textarea>
+              </div>
+
+              <div class="ps-4 text-light">Resume*</div>
+              <div class="d-flex ps-4">
+                <label for="resume">Resume*</label><br>
+             <input type="file" id="resume" style="width:610px ;" placeholder="Upload From Drive">
+              </div>
+
+              <p class="ps-4 pt-2">(.pdf,.txt,.rtf,.docx,.doc files with a 2MB maximum file size are supported)</p>
+
+              <button class="ms-4">Upload</button>
+        </form>
 
 
-
-
-          <!-- college name -->
-          <tr>
-            <td class="one" colspan="2">
-             <label for="CN">College Name*</label> <br>
-             
-             <select name="CN" id="CN" style="width:600px ;height: 30px;">
-              <option value="blank"></option>
-              <option value="option1"></option>
-              <option value="option2"></option>
-              <option value="option3"></option>
-           
-             </select>
-            </td>
-          </tr>
-
-<!-- degree and percent -->
-<tr>
-  
-    <td>
-      <label for="Deg">Degree*</label><br>
-      
-     
-      <select name="Deg" id="Deg" style="width:180px ;margin-right:41px;height: 30px; margin-top: 0px;">
-        <option value="blank"></option>
-        
-        <option value="option1">B.Tech</option>
-        <option value="option1">BCA</option>
-        <option value="option2">BCOM</option>
-        <option value="option3">BA</option>
-        <option value="option4">MCA</option>
-        <option value="option5">B.Sc</option>
-        
-       </select><br>
-       
-       <td>
-        <label for="yer">Year of Completion*</label><br>
-        <input type="date" id="yer" style="width:280px;margin-right:41px;">
-      </td>
-
-    </td>
-      <tr>
-        <td>
-      
-     
-      <select name="Addn" id="edtn" style="width:160px ;margin-right:41px;height: 30px; margin-top: 0px;">
-        <option value="blank">Additional Ed. Detail</option>
-        <option value="option1">Diploma</option>
-        <option value="option2">10th</option>
-        <option value="option3">12th</option>
-        <option value="option4">M.Tech</option>
-        <option value="option4">MBA</option>
-        <option value="option4">Others</option>
-    
-        
-       </select>
-        </td>
-      </tr>   
-    
-    <tr>
-      <td>
-        <label for="Per">Percentage*</label><br>
-        <input type="text" id="per" style="width:280px ;margin-right:41px;">
-
-
-      </td>
-      <td>
-        <label for="cg">CGPA</label><br>
-        <input type="text" id="cg" style="width:280px;margin-right:41px;"/>
-      
-      </td>
-    </tr>
-   <tr>
-    <td>
-      
-      <button onclick="setInputValue()">Additional Ed. Detail</button>
-      
-    </td>
-   </tr>
-
-  </tr>
-
-</table>
-
-<br>
-<table style="margin-left:auto;margin-right:auto">
-
-
-
-<div style="font-size:26px ;"><b>INTERNSHIP DETAILS</b></div>
-
-<!--Internship Details-->
-
-
- <!-- Previous working domain -->
-          <tr>
-            <td>
-              <label for="Prwd">Previous Working Domain (if any)</label><br>
-              <input type="text" id="prwd" style="width:280px ;margin-right:41px;">
-
-
-            </td>
-            <td>
-              <label for="Prsn">Previous Stipend</label><br>
-              <input type="number" id="prsn" style="width:280px;margin-right:41px;">
-            </td>
-          </tr>
-<!--company name-->
-  <tr>
-            <td colspan="2">
-              <label for="cn">Company Name</label><br>
-             <input type="text" id="cn" style="width:600px" >
-            </td>
-          </tr>
-      <tr>
-            <td>
-              <label for="ks">Key Skills</label><br>
-              
-              <input type="text" id="ks" style="width:280px ; height:70px;margin-right:41px;">
-              
-
-            </td>
-            <td>
-              <label for="years">Years Of experience</label><br>
-              <input type="number" id="prsn" style="width:280px;margin-right:41px;">
-              <label for="loc">Preffered Job Location</label>
-              
-              <select name="loc" id="loc" style="width:180px ;margin-right:41px;height: 25px; margin-top: 0px;">
-        <option value="blank"></option>
-        
-        <option value="option1">Delhi-NCR</option>
-        <option value="option1">Jaipur</option>
-
-        <option value="option1">Banglore</option>
-        <option value="option2">Chandigarh</option>
-        <option value="option3">Chennai</option>
-        <option value="option4">Mumbai</option>
-        <option value="option5">Pune</option>
-        
-       </select>
-      
-            </td>
-        
-            <tr>
-              <td>
-                <button>Additional Internship Detail</button>
-              </td>
-            </tr>
-          </tr>
-
-           
-           
-
-
-
-
-
-
-
-
-
-        </table>
+<!--------------------------Educational Details --------------------- -->
+        <div class="pt-5 ps-4" style="font-size: 25px; color: white; font-weight: bold;">EDUCATIONAL DETAILS
     </div>
-    <input type="submit" class="btn btn-primary" value="Apply" style="margin-left:926px  ; margin-top:12px; font-family:sans-serif;  font-size: 16px; width: 90px;border-radius: 2px ;">
-</form>
+
+        <form action="">
+            <div class="d-flex">
+                <div class="ps-4 pe-4 w-100">
+                    <label for="">College Name*</label><br>
+                    <input type="text" name="" id="" class="w-100">
+                </div>
+            </div>
 
 
-      
+            <div class="d-flex">
+                <div class="ps-4 pe-4 w-50">
+                    <label for="">Degree*</label><br>
+                    <select class="form-select w-50">
+                        <option value=""></option>
+                        <option>B.Tech</option>
+                        <option>BCA</option>
+                        <option>BCOM</option>
+                        <option>BA</option>
+                        <option>MCA</option>
+                        <option>B.Sc</option>
+                      </select>
 
-    <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-     <script>
-      function setInputValue(){
-        var input = document.getElementById('per');
-        input.setAttribute("value","New Value");
-      }
-     </script>
+                      <select class="form-select w-50 mt-1">
+                        <option>Additional Ed. Detail</option>
+                        <option>Diploma</option>
+                        <option>12th</option>
+                        <option>10th</option>
+                        <option>M.Tech </option>
+                        <option>MBA</option>
+                        <option>Others</option>
+                      </select>
+                </div>
 
-  </body>
+                <div  class="w-50 ms-5">
+                    <label for="">Year of Completion*</label><br>
+                    <input type="date" name="" id="" class="w-50">
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="ps-4 pe-4 w-100">
+                    <label for="">Percentage*</label><br>
+                    <input type="email" name="" id="" class="w-100">
+                </div>
+
+                <div class="ps-4 pe-4 w-100">
+                    <label for="">CGPA</label><br>
+                    <input type="email" name="" id="" class="w-100">
+                </div>
+            </div>
+        </form>
+
+        <button class="ms-4 mt-2">Additional Ed. Detail</button>
+
+
+         <!---------------------Internship Details ------------------------------- -->
+
+
+    <div class="pt-5 ps-4" style="font-size: 25px; color: white; font-weight: bold;" id="btn-internship">INTERNSHIP DETAILS
+    </div>
+
+    <form action="">
+
+        <div class="d-flex">
+            <div class="ps-4 pe-4 w-100">
+                <label for="">
+                    Previous Working Domain (if any)</label><br>
+                <input type="email" name="" id="" class="w-100">
+            </div>
+
+            <div class="ps-4 pe-4 w-100">
+                <label for="">Previous Stipend</label><br>
+                <input type="email" name="" id="" class="w-100">
+            </div>
+        </div>
+        
+
+        <div class="d-flex">
+            <div class="ps-4 pe-4 w-100">
+                <label for="">Company Name</label><br>
+                <input type="email" name="" id="" class="w-100">
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="ps-4 pe-4 w-100">
+                <label for="">Key Skills</label><br>
+                <input type="email" name="" id="" class="w-50" style="height: 100px;">
+            </div>
+
+            <div class="ps-4 pe-4 w-100">
+                <label for="">Years Of experience</label><br>
+                <input type="email" name="" id="" class="w-100">
+
+                <label for="">Preffered Job Location</label><br>
+                <select name="" id="" class="w-50">
+                    <option value=""></option>
+                    <option value="">Delhi NCR</option>
+                    <option value="">Jaipur</option>
+                    <option value="">Banglore</option>
+                    <option value="">Chandigarh</option>
+                    <option value="">Chennai</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Pune</option>
+                </select>
+            </div>
+        </div>
+    </form>
+
+    <button class="ms-4 mt-2" id="btnScrollTop" onclick="myFunction()" >Additional Internship Detail</button>
+</div>
+
+    </div>
+
+
+</body>
 </html>
